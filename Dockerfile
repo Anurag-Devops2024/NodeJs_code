@@ -1,12 +1,18 @@
-FROM node
+FROM node:latest
+
 WORKDIR /app
 
-RUN apt get install nginx
+# Install nginx
+RUN apt-get update && apt-get install -y nginx
 
-
+# Copy app files
 COPY . .
+
+# Install Node.js dependencies
+RUN npm install
+
+# Expose port (optional)
 EXPOSE 3000
 
-COPY package*.json ./
-
-ENTRYPOINT start npm
+# Command to start your app (example)
+CMD ["node", "index.js"]
