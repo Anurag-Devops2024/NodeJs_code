@@ -1,6 +1,9 @@
 FROM node
 WORKDIR /app
 
+RUN apt get install nginx
+
+
 COPY . .
 EXPOSE 3000
 
