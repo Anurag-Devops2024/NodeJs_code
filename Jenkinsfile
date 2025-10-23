@@ -1,10 +1,13 @@
 pipeline {
   agent any
 
+  parameters {
+            string(name: 'VERSION', defaultValue: '1.0.0', description: 'The version number for the build')
+        }
+
   environment {
     IMAGE_NAME = "nodejsapp"
     REGISTRY = "anuragdhiman400"
-    version = "v1.1"
   }
 
   stages {
