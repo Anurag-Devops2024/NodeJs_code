@@ -4,7 +4,7 @@ pipeline {
   parameters {
             string(name: 'VERSION', defaultValue: '1.0.0', description: 'The version number for the build')
             string(name: 'BRANCH', defaultValue: 'develop', description: 'The branch for the build')
-            string(name: 'ENVIRONMENT', defaultValue: 'develop', description: 'The branch for the build')
+            string(name: 'ENVIRONMENT', defaultValue: 'DEV', description: 'The branch for the build')
         }
 
   environment {
