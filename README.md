@@ -19,3 +19,6 @@ To view a live preview of this application, click [here](https://desolate-coast-
 
 # Created a new branch
 newpage branch added
+
+# Created a new page
+newpage added
